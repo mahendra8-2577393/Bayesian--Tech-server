@@ -14,6 +14,10 @@ const corsOptions = {
 app.use(cors(corsOptions)); // Enable CORS with options
 app.use(express.json());
 
+app.get("/" , (req,res) =>
+{
+  res.send("Hello");
+})
 app.post("/proxy", async (req, res) => {
   try {
     const { url, method, data, headers } = req.body;
