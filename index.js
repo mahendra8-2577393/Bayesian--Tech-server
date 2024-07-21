@@ -5,7 +5,7 @@ const app = express();
 
 // Define CORS options
 const corsOptions = {
-  origin: "https://bayesian-tech-client.vercel.app/", // Replace with your frontend domain
+  origin: "https://bayesian-tech-client.vercel.app", // Replace with your frontend domain
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,
